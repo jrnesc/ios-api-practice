@@ -15,6 +15,7 @@
 		9F4B84C82671695400E7874B /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F4B84B8267162CF00E7874B /* Alamofire.framework */; };
 		9F4B84C92671695400E7874B /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F4B84B8267162CF00E7874B /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9F4B84D92672A68300E7874B /* BrawlerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4B84D82672A68300E7874B /* BrawlerTableViewController.swift */; };
+		9F4B84E32672B30B00E7874B /* BrawlerTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4B84E22672B30B00E7874B /* BrawlerTableCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +101,7 @@
 		9F4B84A22671279600E7874B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F4B84AC267162CF00E7874B /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		9F4B84D82672A68300E7874B /* BrawlerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrawlerTableViewController.swift; sourceTree = "<group>"; };
+		9F4B84E22672B30B00E7874B /* BrawlerTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrawlerTableCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 				9F4B84942671279400E7874B /* AppDelegate.swift */,
 				9F4B84962671279400E7874B /* SceneDelegate.swift */,
 				9F4B84D82672A68300E7874B /* BrawlerTableViewController.swift */,
+				9F4B84E22672B30B00E7874B /* BrawlerTableCell.swift */,
 				9F4B849A2671279400E7874B /* Main.storyboard */,
 				9F4B849D2671279600E7874B /* Assets.xcassets */,
 				9F4B849F2671279600E7874B /* LaunchScreen.storyboard */,
@@ -304,6 +307,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F4B84E32672B30B00E7874B /* BrawlerTableCell.swift in Sources */,
 				9F4B84952671279400E7874B /* AppDelegate.swift in Sources */,
 				9F4B84D92672A68300E7874B /* BrawlerTableViewController.swift in Sources */,
 				9F4B84972671279400E7874B /* SceneDelegate.swift in Sources */,
