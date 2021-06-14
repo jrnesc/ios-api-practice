@@ -21,7 +21,6 @@ class BrawlerListTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         let rows = indexBrawler.count
-        
         return rows
     }
     
@@ -37,8 +36,8 @@ class BrawlerListTableViewController: UITableViewController {
         let indexItems = indexBrawler[indexPath.row]
         cell.nameLabel.text = indexItems.name
         cell.gadget1.text = indexItems.gadgets[0].name
-        cell.starPower1.text = indexItems.gadgets[0].name
-        print(indexItems)
+        cell.starPower1.text = indexItems.starPowers[0].name
+//        print(indexItems)
         return cell
             
         }
@@ -67,7 +66,7 @@ extension BrawlerListTableViewController {
 //                self.displayGadgets = [items][0].gadgets[0].name
 //                self.displayStarPower = [items][0].starPowers[0].name
                 
-                self.indexBrawler = [items]
+                self.indexBrawler.append(items)
                 
                 self.tableView.reloadData()
                 }
