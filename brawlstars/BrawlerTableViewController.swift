@@ -2,15 +2,16 @@ import UIKit
 import Alamofire
 
 
-class BrawlerListTableViewController: UITableViewController {
+class BrawlerListTableViewController: UITableViewController{
   
   var brawlStarsVM = BrawlStarsVM()
   
   
   override func viewDidLoad() {
     super.viewDidLoad()
-//    BrawlStarsVM()
     brawlStarsVM.getRequestCodeable()
+    brawlStarsVM.delegate = self
+
     
   }
   
@@ -37,3 +38,9 @@ class BrawlerListTableViewController: UITableViewController {
   }
 }
 
+extension BrawlerListTableViewController: ReloadDelegate {
+  func tableWasReloaded() {
+    tableView.reloadData()
+    print("success")
+  }
+}

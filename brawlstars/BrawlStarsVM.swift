@@ -2,29 +2,21 @@ import Foundation
 import Alamofire
 
 
-protocol ReloadDelegate : AnyObject
+protocol ReloadDelegate
 {
   func tableWasReloaded()
 }
-
-
-class TableReload: ReloadDelegate
-{
-  func tableWasReloaded() {
-    BrawlerListTableViewController().tableView.reloadData()
-    print("success")
-  }
-}
-
 
 class BrawlStarsVM {
   
   var indexBrawler: [Items] = []
   
+  var delegate: ReloadDelegate?
+  
   //GET Request
   func getRequestCodeable() {
     
-    weak var delegate: ReloadDelegate?
+    
     
     let ids = 16000000...16000047
     
@@ -43,9 +35,7 @@ class BrawlStarsVM {
       AF.request(URL(string: url)!, headers: header).responseDecodable(of: Items.self) {
         response in guard let items = response.value else { return }
         self.indexBrawler.append(items)
-        //utilise a delegate to handle the tableView.reloadData()
-        //doesn't work
-        delegate?.tableWasReloaded()
+        self.delegate?.tableWasReloaded()
         print("Finished request \(i)")
         myData.leave()
         
