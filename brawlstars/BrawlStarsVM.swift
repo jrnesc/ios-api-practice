@@ -4,13 +4,13 @@ import Alamofire
 
 protocol ReloadDelegate : AnyObject
 {
-  func tableWasReloaded(_ items: [Items])
+  func tableWasReloaded()
 }
 
 
 class TableReload: ReloadDelegate
 {
-  func tableWasReloaded(_ items: [Items]) {
+  func tableWasReloaded() {
     BrawlerListTableViewController().tableView.reloadData()
     print("success")
   }
@@ -45,7 +45,7 @@ class BrawlStarsVM {
         self.indexBrawler.append(items)
         //utilise a delegate to handle the tableView.reloadData()
         //doesn't work
-        delegate?.tableWasReloaded(self.indexBrawler)
+        delegate?.tableWasReloaded()
         print("Finished request \(i)")
         myData.leave()
         

@@ -9,6 +9,7 @@ class BrawlerListTableViewController: UITableViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+//    BrawlStarsVM()
     brawlStarsVM.getRequestCodeable()
     
   }
