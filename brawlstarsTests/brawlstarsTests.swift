@@ -50,3 +50,4 @@ class brawlstarsTests: XCTestCase {
     wait(for: [expectation], timeout: 10.0)
     
   }
+}
