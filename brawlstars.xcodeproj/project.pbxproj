@@ -16,7 +16,11 @@
 		9F4B84C92671695400E7874B /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F4B84B8267162CF00E7874B /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9F4B84D92672A68300E7874B /* BrawlerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4B84D82672A68300E7874B /* BrawlerTableViewController.swift */; };
 		9F4B84E32672B30B00E7874B /* BrawlerTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4B84E22672B30B00E7874B /* BrawlerTableCell.swift */; };
-		9F828C82267FD9E900923F1F /* brawlstarsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F828C81267FD9E900923F1F /* brawlstarsTests.swift */; };
+
+		9F4B84F226789E0100E7874B /* brawlstarsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4B84F126789E0100E7874B /* brawlstarsTests.swift */; };
+		9F4B8521267B5CC300E7874B /* BrawlStarsBrawlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4B8520267B5CC300E7874B /* BrawlStarsBrawlers.swift */; };
+		9F4B852B267B5DCD00E7874B /* BrawlStarsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4B852A267B5DCD00E7874B /* BrawlStarsVM.swift */; };
+
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,7 +80,9 @@
 			remoteGlobalIDString = 31293065263E17D600473CEA;
 			remoteInfo = "Alamofire watchOS Tests";
 		};
-		9F828C84267FD9E900923F1F /* PBXContainerItemProxy */ = {
+
+		9F4B84F426789E0100E7874B /* PBXContainerItemProxy */ = {
+
 			isa = PBXContainerItemProxy;
 			containerPortal = 9F4B84892671279400E7874B /* Project object */;
 			proxyType = 1;
@@ -110,9 +116,13 @@
 		9F4B84AC267162CF00E7874B /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		9F4B84D82672A68300E7874B /* BrawlerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrawlerTableViewController.swift; sourceTree = "<group>"; };
 		9F4B84E22672B30B00E7874B /* BrawlerTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrawlerTableCell.swift; sourceTree = "<group>"; };
-		9F828C7F267FD9E900923F1F /* brawlstarsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = brawlstarsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9F828C81267FD9E900923F1F /* brawlstarsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = brawlstarsTests.swift; sourceTree = "<group>"; };
-		9F828C83267FD9E900923F1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+
+		9F4B84EF26789E0100E7874B /* brawlstarsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = brawlstarsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F4B84F126789E0100E7874B /* brawlstarsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = brawlstarsTests.swift; sourceTree = "<group>"; };
+		9F4B84F326789E0100E7874B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F4B8520267B5CC300E7874B /* BrawlStarsBrawlers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrawlStarsBrawlers.swift; sourceTree = "<group>"; };
+		9F4B852A267B5DCD00E7874B /* BrawlStarsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrawlStarsVM.swift; sourceTree = "<group>"; };
+
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,7 +134,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9F828C7C267FD9E900923F1F /* Frameworks */ = {
+
+		9F4B84EC26789E0100E7874B /* Frameworks */ = {
+
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -139,7 +151,9 @@
 			children = (
 				9F4B84AC267162CF00E7874B /* Alamofire.xcodeproj */,
 				9F4B84932671279400E7874B /* brawlstars */,
-				9F828C80267FD9E900923F1F /* brawlstarsTests */,
+
+				9F4B84F026789E0100E7874B /* brawlstarsTests */,
+
 				9F4B84922671279400E7874B /* Products */,
 				9F4B84C72671695400E7874B /* Frameworks */,
 			);
@@ -149,7 +163,9 @@
 			isa = PBXGroup;
 			children = (
 				9F4B84912671279400E7874B /* brawlstars.app */,
-				9F828C7F267FD9E900923F1F /* brawlstarsTests.xctest */,
+
+				9F4B84EF26789E0100E7874B /* brawlstarsTests.xctest */,
+
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -159,6 +175,8 @@
 			children = (
 				9F4B84942671279400E7874B /* AppDelegate.swift */,
 				9F4B84962671279400E7874B /* SceneDelegate.swift */,
+				9F4B8520267B5CC300E7874B /* BrawlStarsBrawlers.swift */,
+				9F4B852A267B5DCD00E7874B /* BrawlStarsVM.swift */,
 				9F4B84D82672A68300E7874B /* BrawlerTableViewController.swift */,
 				9F4B84E22672B30B00E7874B /* BrawlerTableCell.swift */,
 				9F4B849A2671279400E7874B /* Main.storyboard */,
@@ -191,11 +209,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		9F828C80267FD9E900923F1F /* brawlstarsTests */ = {
+
+		9F4B84F026789E0100E7874B /* brawlstarsTests */ = {
 			isa = PBXGroup;
 			children = (
-				9F828C81267FD9E900923F1F /* brawlstarsTests.swift */,
-				9F828C83267FD9E900923F1F /* Info.plist */,
+				9F4B84F126789E0100E7874B /* brawlstarsTests.swift */,
+				9F4B84F326789E0100E7874B /* Info.plist */,
+
 			);
 			path = brawlstarsTests;
 			sourceTree = "<group>";
@@ -221,22 +241,26 @@
 			productReference = 9F4B84912671279400E7874B /* brawlstars.app */;
 			productType = "com.apple.product-type.application";
 		};
-		9F828C7E267FD9E900923F1F /* brawlstarsTests */ = {
+
+		9F4B84EE26789E0100E7874B /* brawlstarsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9F828C90267FD9E900923F1F /* Build configuration list for PBXNativeTarget "brawlstarsTests" */;
+			buildConfigurationList = 9F4B850026789E0100E7874B /* Build configuration list for PBXNativeTarget "brawlstarsTests" */;
 			buildPhases = (
-				9F828C7B267FD9E900923F1F /* Sources */,
-				9F828C7C267FD9E900923F1F /* Frameworks */,
-				9F828C7D267FD9E900923F1F /* Resources */,
+				9F4B84EB26789E0100E7874B /* Sources */,
+				9F4B84EC26789E0100E7874B /* Frameworks */,
+				9F4B84ED26789E0100E7874B /* Resources */,
+
 			);
 			buildRules = (
 			);
 			dependencies = (
-				9F828C85267FD9E900923F1F /* PBXTargetDependency */,
+
+				9F4B84F526789E0100E7874B /* PBXTargetDependency */,
 			);
 			name = brawlstarsTests;
 			productName = brawlstarsTests;
-			productReference = 9F828C7F267FD9E900923F1F /* brawlstarsTests.xctest */;
+			productReference = 9F4B84EF26789E0100E7874B /* brawlstarsTests.xctest */;
+
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -251,7 +275,9 @@
 					9F4B84902671279400E7874B = {
 						CreatedOnToolsVersion = 12.5;
 					};
-					9F828C7E267FD9E900923F1F = {
+
+					9F4B84EE26789E0100E7874B = {
+
 						CreatedOnToolsVersion = 12.5;
 						TestTargetID = 9F4B84902671279400E7874B;
 					};
@@ -277,7 +303,9 @@
 			projectRoot = "";
 			targets = (
 				9F4B84902671279400E7874B /* brawlstars */,
-				9F828C7E267FD9E900923F1F /* brawlstarsTests */,
+
+				9F4B84EE26789E0100E7874B /* brawlstarsTests */,
+
 			);
 		};
 /* End PBXProject section */
@@ -352,7 +380,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9F828C7D267FD9E900923F1F /* Resources */ = {
+
+		9F4B84ED26789E0100E7874B /* Resources */ = {
+
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -367,27 +397,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F4B84E32672B30B00E7874B /* BrawlerTableCell.swift in Sources */,
+				9F4B852B267B5DCD00E7874B /* BrawlStarsVM.swift in Sources */,
+				9F4B8521267B5CC300E7874B /* BrawlStarsBrawlers.swift in Sources */,
 				9F4B84952671279400E7874B /* AppDelegate.swift in Sources */,
 				9F4B84D92672A68300E7874B /* BrawlerTableViewController.swift in Sources */,
 				9F4B84972671279400E7874B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9F828C7B267FD9E900923F1F /* Sources */ = {
+
+		9F4B84EB26789E0100E7874B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F828C82267FD9E900923F1F /* brawlstarsTests.swift in Sources */,
+				9F4B84F226789E0100E7874B /* brawlstarsTests.swift in Sources */,
+
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		9F828C85267FD9E900923F1F /* PBXTargetDependency */ = {
+
+		9F4B84F526789E0100E7874B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 9F4B84902671279400E7874B /* brawlstars */;
-			targetProxy = 9F828C84267FD9E900923F1F /* PBXContainerItemProxy */;
+			targetProxy = 9F4B84F426789E0100E7874B /* PBXContainerItemProxy */;
+
 		};
 /* End PBXTargetDependency section */
 
@@ -565,7 +601,9 @@
 			};
 			name = Release;
 		};
-		9F828C86267FD9E900923F1F /* Debug */ = {
+
+		9F4B84F626789E0100E7874B /* Debug */ = {
+
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -585,7 +623,9 @@
 			};
 			name = Debug;
 		};
-		9F828C87267FD9E900923F1F /* Release */ = {
+
+		9F4B84F726789E0100E7874B /* Release */ = {
+
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -626,11 +666,13 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9F828C90267FD9E900923F1F /* Build configuration list for PBXNativeTarget "brawlstarsTests" */ = {
+
+		9F4B850026789E0100E7874B /* Build configuration list for PBXNativeTarget "brawlstarsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9F828C86267FD9E900923F1F /* Debug */,
-				9F828C87267FD9E900923F1F /* Release */,
+				9F4B84F626789E0100E7874B /* Debug */,
+				9F4B84F726789E0100E7874B /* Release */,
+
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,9 +1,3 @@
-//
-//  brawlstarsTests.swift
-//  brawlstarsTests
-//
-//  Created by Jaron Escoffery on 20/06/2021.
-//
 
 import XCTest
 @testable import brawlstars
@@ -56,5 +50,3 @@ class brawlstarsTests: XCTestCase {
     wait(for: [expectation], timeout: 10.0)
     
   }
-  
-}
