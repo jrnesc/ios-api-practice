@@ -16,6 +16,7 @@
 		9F4B84C92671695400E7874B /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F4B84B8267162CF00E7874B /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9F4B84D92672A68300E7874B /* BrawlerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4B84D82672A68300E7874B /* BrawlerTableViewController.swift */; };
 		9F4B84E32672B30B00E7874B /* BrawlerTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4B84E22672B30B00E7874B /* BrawlerTableCell.swift */; };
+		9F828C82267FD9E900923F1F /* brawlstarsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F828C81267FD9E900923F1F /* brawlstarsTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,13 @@
 			remoteGlobalIDString = 31293065263E17D600473CEA;
 			remoteInfo = "Alamofire watchOS Tests";
 		};
+		9F828C84267FD9E900923F1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F4B84892671279400E7874B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F4B84902671279400E7874B;
+			remoteInfo = brawlstars;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -102,6 +110,9 @@
 		9F4B84AC267162CF00E7874B /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		9F4B84D82672A68300E7874B /* BrawlerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrawlerTableViewController.swift; sourceTree = "<group>"; };
 		9F4B84E22672B30B00E7874B /* BrawlerTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrawlerTableCell.swift; sourceTree = "<group>"; };
+		9F828C7F267FD9E900923F1F /* brawlstarsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = brawlstarsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F828C81267FD9E900923F1F /* brawlstarsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = brawlstarsTests.swift; sourceTree = "<group>"; };
+		9F828C83267FD9E900923F1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +124,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9F828C7C267FD9E900923F1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -121,6 +139,7 @@
 			children = (
 				9F4B84AC267162CF00E7874B /* Alamofire.xcodeproj */,
 				9F4B84932671279400E7874B /* brawlstars */,
+				9F828C80267FD9E900923F1F /* brawlstarsTests */,
 				9F4B84922671279400E7874B /* Products */,
 				9F4B84C72671695400E7874B /* Frameworks */,
 			);
@@ -130,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				9F4B84912671279400E7874B /* brawlstars.app */,
+				9F828C7F267FD9E900923F1F /* brawlstarsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -171,6 +191,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9F828C80267FD9E900923F1F /* brawlstarsTests */ = {
+			isa = PBXGroup;
+			children = (
+				9F828C81267FD9E900923F1F /* brawlstarsTests.swift */,
+				9F828C83267FD9E900923F1F /* Info.plist */,
+			);
+			path = brawlstarsTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -192,6 +221,24 @@
 			productReference = 9F4B84912671279400E7874B /* brawlstars.app */;
 			productType = "com.apple.product-type.application";
 		};
+		9F828C7E267FD9E900923F1F /* brawlstarsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F828C90267FD9E900923F1F /* Build configuration list for PBXNativeTarget "brawlstarsTests" */;
+			buildPhases = (
+				9F828C7B267FD9E900923F1F /* Sources */,
+				9F828C7C267FD9E900923F1F /* Frameworks */,
+				9F828C7D267FD9E900923F1F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9F828C85267FD9E900923F1F /* PBXTargetDependency */,
+			);
+			name = brawlstarsTests;
+			productName = brawlstarsTests;
+			productReference = 9F828C7F267FD9E900923F1F /* brawlstarsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -203,6 +250,10 @@
 				TargetAttributes = {
 					9F4B84902671279400E7874B = {
 						CreatedOnToolsVersion = 12.5;
+					};
+					9F828C7E267FD9E900923F1F = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 9F4B84902671279400E7874B;
 					};
 				};
 			};
@@ -226,6 +277,7 @@
 			projectRoot = "";
 			targets = (
 				9F4B84902671279400E7874B /* brawlstars */,
+				9F828C7E267FD9E900923F1F /* brawlstarsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -300,6 +352,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9F828C7D267FD9E900923F1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -314,7 +373,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9F828C7B267FD9E900923F1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F828C82267FD9E900923F1F /* brawlstarsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9F828C85267FD9E900923F1F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F4B84902671279400E7874B /* brawlstars */;
+			targetProxy = 9F828C84267FD9E900923F1F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9F4B849A2671279400E7874B /* Main.storyboard */ = {
@@ -490,6 +565,46 @@
 			};
 			name = Release;
 		};
+		9F828C86267FD9E900923F1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B8FYZ5453V;
+				INFOPLIST_FILE = brawlstarsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = example.brawlstarsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/brawlstars.app/brawlstars";
+			};
+			name = Debug;
+		};
+		9F828C87267FD9E900923F1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B8FYZ5453V;
+				INFOPLIST_FILE = brawlstarsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = example.brawlstarsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/brawlstars.app/brawlstars";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -507,6 +622,15 @@
 			buildConfigurations = (
 				9F4B84A62671279600E7874B /* Debug */,
 				9F4B84A72671279600E7874B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F828C90267FD9E900923F1F /* Build configuration list for PBXNativeTarget "brawlstarsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F828C86267FD9E900923F1F /* Debug */,
+				9F828C87267FD9E900923F1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
